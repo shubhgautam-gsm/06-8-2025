@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 Boxes Width Example</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        .box {
+            float: left;
+            width: 100%;   /* Mobile default */
+            padding: 50px;
+            box-sizing: border-box;
+            text-align: center;
+            color: white;
+        }
+
+        .box1 { background: red; }
+        .box2 { background: blue; }
+        .box3 { background: green; }
+        .box4 { background: orange; }
+
+        /* Tablet */
+        @media (min-width: 600px) {
+            .box {
+                width: 50%;
+            }
+        }
+
+        /* Laptop */
+        @media (min-width: 768px) {
+            .box {
+                width: 33.33%;
+            }
+        }
+
+        /* Large Screen */
+        @media (min-width: 1024px) {
+            .box {
+                width: 25%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box box1">Box 1</div>
+    <div class="box box2">Box 2</div>
+    <div class="box box3">Box 3</div>
+    <div class="box box4">Box 4</div>
+
+</body>
+</html>
